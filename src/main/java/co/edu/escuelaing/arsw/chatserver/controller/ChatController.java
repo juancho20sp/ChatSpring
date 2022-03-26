@@ -24,7 +24,8 @@ public class ChatController {
     public Message receivePrivateMessages(@Payload Message message){
         // This uses the setUserDestinationPrefix on WebSocketConfig
         simpMessagingTemplate.convertAndSendToUser(message.getReceiverName(), "/private", message); // LISTEN: /user/USERNAME/private
-
+        System.out.println("--- MESSAGE ---");
+        System.out.println(message);
         return message;
     }
 
