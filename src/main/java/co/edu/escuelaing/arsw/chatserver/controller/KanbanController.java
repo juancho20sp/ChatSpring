@@ -1,6 +1,7 @@
 package co.edu.escuelaing.arsw.chatserver.controller;
 
 import co.edu.escuelaing.arsw.chatserver.controller.model.Card;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.messaging.handler.annotation.MessageExceptionHandler;
 import org.springframework.messaging.handler.annotation.MessageMapping;
 import org.springframework.messaging.handler.annotation.Payload;
@@ -12,6 +13,7 @@ import org.springframework.stereotype.Controller;
 public class KanbanController {
 
     // Create dynamic topics
+    @Autowired
     private SimpMessagingTemplate simpMessagingTemplate;
 
     @MessageMapping("/newCard")
