@@ -29,6 +29,11 @@ public class KanbanController {
 
     @MessageMapping("/cardClicked")
     public Card clickCard(@Payload Card card){
+        // $
+        System.out.println("CARD CLICKED");
+        System.out.println(card);
+
+
         simpMessagingTemplate.convertAndSendToUser(card.getRoomId(), "/cardClicked", card);
         System.out.println("--- CARD ---");
         System.out.println("--- clickCard ---");
