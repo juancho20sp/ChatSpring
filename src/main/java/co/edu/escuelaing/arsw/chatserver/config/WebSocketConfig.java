@@ -18,7 +18,7 @@ public class WebSocketConfig implements WebSocketMessageBrokerConfigurer {
     @Override
     public void configureMessageBroker(MessageBrokerRegistry registry) {
         // Application Destination prefix
-        // The users send data to the server using this prefeix
+        // The users send data to the server using this prefix
         registry.setApplicationDestinationPrefixes("/app");
 
         // Topic prefixes
