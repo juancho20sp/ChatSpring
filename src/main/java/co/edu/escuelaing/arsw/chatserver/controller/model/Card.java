@@ -17,4 +17,5 @@ public class Card {
     private String limitDate;
     private CardStatus cardStatus;
     private String roomId;
+    private String resultData;
 }

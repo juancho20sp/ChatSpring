@@ -41,6 +41,20 @@ public class KanbanController {
         return card;
     }
 
+    @MessageMapping("/cardClickedEnd")
+    public Card clickCardEnd(@Payload Card card){
+        // $
+        System.out.println("CARD CLICKED");
+        System.out.println(card);
+
+
+        simpMessagingTemplate.convertAndSendToUser(card.getRoomId(), "/cardClickedEnd", card);
+        System.out.println("--- CARD ---");
+        System.out.println("--- clickCard ---");
+        System.out.println(card.toString());
+        return card;
+    }
+
 //    @MessageMapping("/private-message")
     @MessageMapping("/moveCard")
     public Card moveCard(@Payload Card card){
