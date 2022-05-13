@@ -1,0 +1,4 @@
+-------------------------------------------------------------------------------
+Test set: co.edu.escuelaing.arsw.chatserver.ChatserverApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 9.991 s - in co.edu.escuelaing.arsw.chatserver.ChatserverApplicationTests

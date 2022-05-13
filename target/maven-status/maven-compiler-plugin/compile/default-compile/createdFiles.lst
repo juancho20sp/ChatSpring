@@ -1,0 +1,8 @@
+co\edu\escuelaing\arsw\chatserver\config\WebSocketConfig.class
+co\edu\escuelaing\arsw\chatserver\controller\model\Message.class
+co\edu\escuelaing\arsw\chatserver\controller\utils\MessageStatus.class
+co\edu\escuelaing\arsw\chatserver\controller\model\Card.class
+co\edu\escuelaing\arsw\chatserver\ChatserverApplication.class
+co\edu\escuelaing\arsw\chatserver\controller\KanbanController.class
+co\edu\escuelaing\arsw\chatserver\controller\utils\CardStatus.class
+co\edu\escuelaing\arsw\chatserver\controller\ChatController.class
